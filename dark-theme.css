@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#050500;
+}
+.wrapper{
+    width: 80%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.loader {
+    width: 150px ;
+    height: 150px;
+    border-left: 5px solid #38ff8e;
+    border-radius: 50%;
+    animation: right5231 0.9s linear infinite; 
+    
+}
+
+.button {
+    background-color: #3366FF; /* Blue color for the button background */
+    color: #FFFFFF; /* White text color */
+    padding: 15px 30px; /* Increase padding to make it larger */
+    font-size: 18px; /* Increase font size */
+    border: none; /* Remove the button border */
+    border-radius: 10px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bold; /* Make the text bold */
+}
+
+.button:hover {
+    background-color: #1E53BD; /* Darker blue color on hover */
+}
+.container{
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgba(255,255,255,0.06);
+    border: 2px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+}
+.shape-1{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(
+#ff0e10, 
+#ff66a6
+);
+    border-radius: 20%;
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+    z-index: -1;
+}
+.shape-2{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(
+ #ff0e10, #400ea5);
+    border-radius: 20%;
+    position: absolute;
+    top: -100px;
+    right: -50px;
+    z-index: -1;
+}
+.shape-3{
+    height: 300px;
+    width: 300px;
+    border-radius: 20%;
+    background: linear-gradient(
+ #ff66a6, #ff66a6);
+
+    position: absolute;
+    top: 150px;
+    right: 160px;
+    z-index: -1;
+}
+.container *{
+    font-family: "Poppins",sans-serif;
+    color: #ffffff;
+    font-weight: 900;
+}
+h2{
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.bar{
+    position: relative;
+    background-color: rgba(255,255,255,0.06);
+    border: 5px solid rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #400ea5;
+    border: 1px solid #1c97fc;
+    box-shadow: 0 0 5px rgba(28,151,252,0);
+}
+#python-bar{
+    animation: python-fill 2s forwards;
+}
+@keyframes python-fill{
+    100%{
+        width: 90%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill{
+    100%{
+        width: 75%;
+    }
+}
+#cpp-bar{
+    animation: cpp-fill 2s forwards;
+}
+@keyframes cpp-fill {
+    100%{
+        width: 40%;
+    }
+}
+#htmlcss-bar{
+    animation: htmlcss-fill 2s forwards;
+}
+@keyframes htmlcss-fill{
+    100%{
+        width: 80%;
+    }
+}

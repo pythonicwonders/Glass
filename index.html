@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+  <title>Glassmorphism percentage Bar</title> <!-Google Font--> 
+  <link id="theme" href="light-theme.css" rel="stylesheet"> 
+ </head> 
+ <body> 
+  <div class="wrapper"> 
+   <div class="shape-1"></div> 
+   <div class="shape-2"></div> 
+   <div class="shape-3"></div>
+   <div class="loader"></div>
+   <div class="container"> 
+      
+    <h2>PERCENTAGE OF USAGE </h2> 
+    <div class="skills"> 
+     <div class="details"> <span>PYTHON</span> <span>90%</span> 
+     </div> 
+     <div class="bar"> 
+      <div id="python-bar"></div> 
+     </div> 
+    </div> 
+    <div class="skills"> 
+     <div class="details"> <span>JavaScript</span> <span>85%</span> 
+     </div> 
+     <div class="bar"> 
+      <div id="js-bar"></div> 
+     </div> 
+    </div> 
+    <div class="skills"> 
+     <div class="details"> <span>C++</span> <span>40%</span> 
+     </div> 
+     <div class="bar"> 
+      <div id="cpp-bar"></div> 
+     </div> 
+    </div> 
+    <div class="skills"> 
+     <div class="details"> <span>HTML & CSS</span> <span>70%</span> 
+     </div> 
+     <div class="bar"> 
+      <div id="htmlcss-bar"></div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <button class="button" onclick="toggleTheme()"></button>
+  <script>
+        function toggleTheme() {
+            const themeLink = document.getElementById("theme");
+            if (themeLink.href.endsWith("dark-theme.css")) {
+                themeLink.href = "light-theme.css"; // Switch to dark theme
+            } else {
+                themeLink.href = "dark-theme.css"; // Switch to light theme
+            }
+        }
+    </script>
+ </body>
+</html>

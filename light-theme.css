@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:100700; /*#15202B Dark blue background */
+}
+.wrapper {
+    width: 80%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+
+
+.button {
+    background-color: #3366FF; /* Blue color for the button background */
+    color: #FFFFFF; /* White text color */
+    padding: 15px 30px; /* Increase padding to make it larger */
+    font-size: 18px; /* Increase font size */
+    border: none; /* Remove the button border */
+    border-radius: 10px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-weight: bold; /* Make the text bold */
+}
+
+.button:hover {
+    background-color: #1E53BD; /* Darker blue color on hover */
+}
+.container {
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgba(0, 0, 0, 0.06); /* Light gray background */
+    border: 2px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+.shape-1 {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(#FF5733, #FF8C33); /* Gradient with orange and red */
+    border-radius: 20%;
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+    z-index: -1;
+}
+.shape-2 {
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(#33B5FF, #3366FF); /* Gradient with blue */
+    border-radius: 20%;
+    position: absolute;
+    top: -100px;
+    right: -50px;
+    z-index: -1;
+}
+.shape-3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 20%;
+    background: linear-gradient(#D433FF, #FF33E7); /* Gradient with purple and pink */
+    position: absolute;
+    top: 150px;
+    right: 160px;
+    z-index: -1;
+}
+.container * {
+    font-family: "Poppins", sans-serif;
+    color: #3366FF;
+    font-weight: 900;
+}
+h2 {
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.06); /* Light gray background */
+    border: 5px solid rgba(0, 0, 0, 0.06);
+    padding: 7px 10px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #3366FF; /* Blue color */
+    border: 1px solid #FF5733; /* Red border */
+    box-shadow: 0 0 5px rgba(255, 87, 51, 0);
+}
+#python-bar {
+    animation: python-fill 2s forwards;
+}
+@keyframes python-fill {
+    100% {
+        width: 90%;
+    }
+}
+#js-bar {
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100% {
+        width: 75%;
+    }
+}
+#cpp-bar {
+    animation: cpp-fill 2s forwards;
+}
+@keyframes cpp-fill {
+    100% {
+        width: 40%;
+    }
+}
+#htmlcss-bar {
+    animation: htmlcss-fill 2s forwards;
+}
+@keyframes htmlcss-fill {
+    100% {
+        width: 80%;
+    }
+}
