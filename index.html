@@ -1,58 +1,69 @@
-<!doctype html>
-<html lang="en">
- <head> 
-  <title>Glassmorphism percentage Bar</title> <!-Google Font--> 
-  <link id="theme" href="light-theme.css" rel="stylesheet"> 
- </head> 
- <body> 
-  <div class="wrapper"> 
-   <div class="shape-1"></div> 
-   <div class="shape-2"></div> 
-   <div class="shape-3"></div>
-   <div class="loader"></div>
-   <div class="container"> 
-      
-    <h2>PERCENTAGE OF USAGE </h2> 
-    <div class="skills"> 
-     <div class="details"> <span>PYTHON</span> <span>90%</span> 
-     </div> 
-     <div class="bar"> 
-      <div id="python-bar"></div> 
-     </div> 
-    </div> 
-    <div class="skills"> 
-     <div class="details"> <span>JavaScript</span> <span>85%</span> 
-     </div> 
-     <div class="bar"> 
-      <div id="js-bar"></div> 
-     </div> 
-    </div> 
-    <div class="skills"> 
-     <div class="details"> <span>C++</span> <span>40%</span> 
-     </div> 
-     <div class="bar"> 
-      <div id="cpp-bar"></div> 
-     </div> 
-    </div> 
-    <div class="skills"> 
-     <div class="details"> <span>HTML & CSS</span> <span>70%</span> 
-     </div> 
-     <div class="bar"> 
-      <div id="htmlcss-bar"></div> 
-     </div> 
-    </div> 
-   </div> 
-  </div> 
-  <button class="button" onclick="toggleTheme()"></button>
-  <script>
-        function toggleTheme() {
-            const themeLink = document.getElementById("theme");
-            if (themeLink.href.endsWith("dark-theme.css")) {
-                themeLink.href = "light-theme.css"; // Switch to dark theme
-            } else {
-                themeLink.href = "dark-theme.css"; // Switch to light theme
-            }
-        }
-    </script>
- </body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional combat design">
+	  <meta name="keywords" content="combat design, affordable combat design, combat web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Hasino Combat Deisgn | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Hassan</span> Customer service</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>Affordable combat services</h1>
+        <p></p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="./img/logo_html.png">
+          <h3>Three quater</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_css.png">
+          <h3>CSS3 Styling</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+        <div class="box">
+          <img src="./img/logo_brush.png">
+          <h3>Graphic Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Acme Web Deisgn, Copyright &copy; 2019</p>
+    </footer>
+  </body>
 </html>
